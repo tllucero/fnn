@@ -1,0 +1,88 @@
+Finally realized I should use my 1999 optimization for price.
+
+If you invest a random 4 stocks for the 14 year period starting 11 March 1996 (beginning of your published data), you get a geometric average return of 21.76% using 'A' picks of >= $30. This screen is so good that you can run it 10000 times and not have a single loss, even at 2:1 leverage. In fact, using 2:1 leverage, the results are:
+
+Trading starting				
+1996/04/11	$10,000.00 			
+4 stocks		price >= 30		25%
+Rank A only 			Margin	200%
+No commissions			Annual	41.96%
+maximum	$9,590,520.56 		1223 	
+95%	$4,061,477.00 			
+80%	$2,530,162.36 			
+20%	$747,278.73 			
+5%	$393,005.52 			
+minimum	$50,854.00 		1161 	
+median	$1,422,027.75 			
+mean	$1,721,325.20 		1187 	
+geo-mean	$1,350,452.60 			4.90561 
+
+Note that the WORST return (before commissions) gives you +408.5% running it 1000 times.
+
+Using no leverage, the numbers are:
+Trading starting				
+1996/04/11	$10,000.00 			
+4 stocks	25%	price >= 30		
+Rank A only 				
+No commissions			Annual	21.76%
+maximum	$462,786.64 		1220 	
+95%	$272,229.83 			
+80%	$209,866.11 			
+20%	$118,663.82 			
+5%	$88,775.52 			
+minimum	$49,413.49 		1160 	
+median	$158,516.45 			
+mean	$166,507.00 		1187 	
+geo-mean	$157,415.65 			2.75630 
+
+Again, worst case is +394.1%. Absolutely amazing.
+Average number of trades per year = 1187/14 = 84.8. Using ScotTrade at $7 per trade, annual commissions of $1,187. Optimum minimal trade is $4,000 - $4,500. Optimum minimum number of positions is 2-3. If you trade using 30% margin for 130% long, 3 positions at $4,200 gets you a starting amount of $9,700.
+
+The other amazing feature of these picks is that going from 1 to 4 picks has almost no effect on the geometric mean. It only cuts the variance.
+1 stock  A, >= $30 21.31%
+2 stocks A, >= $30 21.37%
+3 stocks A, >= $30 22.30%
+4 stocks A, >= $30 21.76%
+
+3 stocks A, >= $30, 130% margin 28.47%
+4 stocks A, >= $30, 130% margin 28.25%
+4 stocks A, >= $30, 200% margin 41.96%
+
+As you can see, use of margin is almost linear to at least 2:1 leverage. 
+
+You get (after $7 commissions):
+1 stock  -  $4,800 14.25%
+2 stocks -  $9,100 14.28%
+3 stocks - $12,400 14.85%
+4 stocks - $16,400 14.52%
+4 stocks 200% margin - $16,400 34.70%
+if margin interest rate less than 20.18% use margin
+
+What happens if you don't filter the <$30 stocks? Much worse, due to outliers.
+1 stock  A (8.16%)
+2 stocks A  2.02%
+3 stocks A  4.88%
+4 stocks A  6.87%
+5 stocks A  8.37%
+6 stocks A  8.87%
+7 stocks A  8.40%
+6 stocks A 130% margin 10.11%
+
+This is useful, as it gives an idea of what trade size should look like if the future is less profitable than 1996-2010. You get (after $7 commissions):
+1 stock  - don't trade
+2 stocks - buy 5-year U.S. bonds
+3 stocks - $66,900 3.25%
+4 stocks - $61,600 4.58%
+5 stocks - $61,600 5.58%
+6 stocks - $61,600 5.60%
+7 stocks - $61,600 4.68%
+6 stocks 130% margin - $59,800 6.74%
+if margin interest rate is under 3.8% use margin
+
+The sweet spot here is 5-6 stocks, with a minimum size of $10,000 - $12,500 per position. The comparable numbers for 4 'A' stocks >= $30, $7 commissions are:
+4 stocks - $61,600 19.83% and
+4 stocks 2:1 leverage - $61,600 40.03%
+
+Your comments would be appreciated.
+
+Thomas Lucero
